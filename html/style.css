@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #eaeaea;
 }
 
 header {
-    background-color: #005792;
+    background: linear-gradient(135deg, #007bff, #005792);
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -22,20 +22,25 @@ section {
     margin: 20px;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 h2 {
     color: #005792;
 }
 
-ul {
+ul, .experience-entry {
     list-style-type: none;
     padding: 0;
 }
 
-li {
-    margin-bottom: 10px;
+li, .experience-entry {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #005792;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #contact p {
@@ -49,4 +54,14 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.experience-entry h3 {
+    margin-top: 0;
+}
+
+.experience-entry p {
+    margin-bottom: 0;
+    font-size: 0.9em;
+    color: #666;
 }
